@@ -12,5 +12,8 @@ class Song
     @genre = genre
     @@all << self
   end
-  
+
+  attr_accessor :artist, :genre
+  attr_reader :name
+
 end
