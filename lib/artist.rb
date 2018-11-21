@@ -7,7 +7,7 @@ class Artist
     @@all << self
   end
 
-  attr_reader = :name
+  attr_reader :name
 
   def self.all
     @@all
