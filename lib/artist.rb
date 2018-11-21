@@ -8,6 +8,8 @@ class Artist
     @@all << self
   end
 
+  attr_reader = :songs
+
   def self.all
     @@all
   end
@@ -15,5 +17,5 @@ class Artist
   def new_song(name, genre)
     song = Song.new(name, genre)
   end
-  
+
 end
