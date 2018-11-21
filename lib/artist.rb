@@ -15,7 +15,11 @@ class Artist
 
   def new_song(name, genre)
     song = Song.new(name, self, genre)
+  end
 
+  def songs
+    Song.all.find_all do |song|
+      song.artist == @name
   end
 
 end

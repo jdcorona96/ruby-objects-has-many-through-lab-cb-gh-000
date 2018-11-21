@@ -10,5 +10,5 @@ class Genre
     @@all << self
     @name = name
   end
-  
+
 end
