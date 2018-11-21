@@ -8,7 +8,7 @@ class Artist
     @@all << self
   end
 
-  attr_reader = :songs, :genres
+  attr_reader = :songs, :genres, :name
 
   def self.all
     @@all
