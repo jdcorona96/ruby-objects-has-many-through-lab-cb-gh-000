@@ -18,9 +18,15 @@ class Artist
   end
 
   def songs
-    Song.all.find_all do |song|
-      song.artist == @name
+    Song.all.collect do |song|
+      if song.artist == @name
+        song.name
     end
+  end
+
+  def genres
+    
+    
   end
 
 end
