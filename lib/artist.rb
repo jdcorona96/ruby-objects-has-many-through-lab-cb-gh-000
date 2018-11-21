@@ -31,7 +31,7 @@ class Artist
     output = songs.collect do |song|
       song.genre
     end
-    binding.pry
+    #binding.pry
   end
 
 end
