@@ -20,6 +20,7 @@ class Artist
   def songs
     Song.all.find_all do |song|
       song.artist == @name
+    end
   end
 
 end
