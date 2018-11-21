@@ -21,12 +21,13 @@ class Artist
     Song.all.collect do |song|
       if song.artist == @name
         song.name
+      end
     end
   end
 
   def genres
-    
-    
+
+
   end
 
 end
