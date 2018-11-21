@@ -7,15 +7,15 @@ class Artist
     @@all << self
   end
 
-  attr_reader = :songs, :genres, :name
+  attr_reader = :name
 
   def self.all
     @@all
   end
 
   def new_song(name, genre)
-    song = Song.new(name, genre)
-    @songs << song
+    song = Song.new(name, self, genre)
+    
   end
 
 end
