@@ -26,9 +26,10 @@ class Artist
   end
 
   def genres
-    songs.collect do |song|
+    output = songs.collect do |song|
       song.genre
     end
+    binding.pry
   end
 
 end
