@@ -11,6 +11,8 @@ class Genre
     @name = name
   end
 
+  attr_reader :name
+
   def songs
     Song.all.collect do |song|
       if song.genre == @name
