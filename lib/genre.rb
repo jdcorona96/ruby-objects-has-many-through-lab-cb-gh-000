@@ -11,4 +11,18 @@ class Genre
     @name = name
   end
 
+  def songs
+    Song.all.collect do |song|
+      if song.genre == @name
+        song.name
+      end
+    end
+  end
+
+  def artists
+    songs.collect do |song|
+      song.artist
+    end
+  end
+
 end
