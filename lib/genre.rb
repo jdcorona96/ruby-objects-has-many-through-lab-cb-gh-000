@@ -15,8 +15,8 @@ class Genre
 
   def songs
     Song.all.collect do |song|
-      if song.genre == @name
-        song.name
+      if song.genre.name == @name
+        song
       end
     end
   end
